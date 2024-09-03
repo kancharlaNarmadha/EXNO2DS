@@ -1,6 +1,6 @@
 # EXNO2DS
 # AIM:
-      To perform Exploratory Data Analysis on the given data set
+      To perform Exploratory Data Analysis on the given data set.
       
 # EXPLANATION:
   The primary aim with exploratory analysis is to examine the data for distribution, outliers and anomalies to direct specific testing of your hypothesis.
@@ -112,7 +112,12 @@ sns.catplot(data=df,col="Survived",x="Gender",hue="Pclass",kind="count")
 ![image](https://github.com/Vanitha-SM/EXNO2DS/assets/119557985/4f75e816-c891-4f7d-b499-c615781c6b15)
 
 ```
+corr=df.corr()
+sns.heatmap(corr,annot=True)
+```
+![image](https://github.com/Vanitha-SM/EXNO2DS/assets/119557985/824aa31e-c281-41a9-a839-9a5ab78b90d0)
 
+```
 sns.pairplot(df)
 ```
 ![image](https://github.com/Vanitha-SM/EXNO2DS/assets/119557985/85698857-6e10-4a2c-932d-1f43fa72671e)
